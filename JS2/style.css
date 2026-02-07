@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 36px;
+    text-align: center;
+}
+
+.instruction {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.input-section {
+    margin-bottom: 30px;
+}
+
+#textInput {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 18px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#textInput:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.mirror-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.mirror-section h2 {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.mirror-text {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 24px;
+    min-height: 80px;
+    word-wrap: break-word;
+    font-weight: 500;
+    backdrop-filter: blur(10px);
+}
+
+.mirror-text:empty::before {
+    content: 'Your text will appear here...';
+    color: rgba(255, 255, 255, 0.6);
+    font-style: italic;
+}

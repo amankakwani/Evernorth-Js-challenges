@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic List Filter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fruit Search</h1>
+        <p class="description">Type to filter the list of fruits</p>
+        
+        <div class="search-box">
+            <input 
+                type="text" 
+                id="searchInput" 
+                placeholder="Search for fruits..."
+                autocomplete="off"
+            >
+            <span class="search-icon">🔍</span>
+        </div>
+        
+        <div class="results-info">
+            <span id="resultCount">Showing all fruits</span>
+        </div>
+        
+        <ul id="fruitList" class="fruit-list">
+            
+        </ul>
+        
+        <div id="noResults" class="no-results" style="display: none;">
+            <p>😔 No fruits found matching your search</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
